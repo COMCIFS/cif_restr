@@ -1539,7 +1539,7 @@ save_restr_equal_distance_class.esd_su
     _name.category_id             restr_equal_distance_class
     _name.object_id               esd_su
     _name.linked_item_id          '_restr_equal_distance_class.esd'
-    _units.code                   degrees
+    _units.code                   angstroms
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
@@ -1806,7 +1806,7 @@ save_restr_equal_torsion_class.average
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
-    _units.code                   angstroms
+    _units.code                   degrees
 
 save_
 
@@ -1865,7 +1865,7 @@ save_restr_equal_torsion_class.diff_max
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
-    _units.code                   angstroms
+    _units.code                   degrees
 
 save_
 
@@ -1880,7 +1880,7 @@ save_restr_equal_torsion_class.diff_max_su
     _name.category_id             restr_equal_torsion_class
     _name.object_id               diff_max_su
     _name.linked_item_id          '_restr_equal_torsion_class.diff_max'
-    _units.code                   angstroms
+    _units.code                   degrees
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
@@ -1920,7 +1920,7 @@ save_restr_equal_torsion_class.esd_su
     _name.category_id             restr_equal_torsion_class
     _name.object_id               esd_su
     _name.linked_item_id          '_restr_equal_torsion_class.esd'
-    _units.code                   degrees
+    _units.code                   angstroms
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
@@ -2605,7 +2605,7 @@ save_restr_plane_class.displacement_esd_su
     _name.category_id             restr_plane_class
     _name.object_id               displacement_esd_su
     _name.linked_item_id          '_restr_plane_class.displacement_esd'
-    _units.code                   degrees
+    _units.code                   angstroms
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
@@ -3416,7 +3416,7 @@ save_restr_u_rigid.u_parallel_su
     _name.category_id             restr_u_rigid
     _name.object_id               esd_su
     _name.linked_item_id          '_restr_u_rigid.u_parallel'
-    _units.code                   degrees
+    _units.code                   angstrom_squared
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
