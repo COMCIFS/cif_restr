@@ -1191,7 +1191,7 @@ save_restr_equal_angle_class.esd
 ;
     _name.category_id             restr_equal_angle_class
     _name.object_id               esd
-    _type.purpose                 Number
+    _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
@@ -1519,7 +1519,7 @@ save_restr_equal_distance_class.esd
 ;
     _name.category_id             restr_equal_distance_class
     _name.object_id               esd
-    _type.purpose                 Number
+    _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
@@ -1900,7 +1900,7 @@ save_restr_equal_torsion_class.esd
 ;
     _name.category_id             restr_equal_torsion_class
     _name.object_id               esd
-    _type.purpose                 Number
+    _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
@@ -2585,7 +2585,7 @@ save_restr_plane_class.displacement_esd
 ;
     _name.category_id             restr_plane_class
     _name.object_id               displacement_esd
-    _type.purpose                 Number
+    _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
@@ -3396,7 +3396,7 @@ save_restr_u_rigid.u_parallel
 ;
     _name.category_id             restr_u_rigid
     _name.object_id               U_parallel
-    _type.purpose                 Number
+    _type.purpose                 Measurand
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
