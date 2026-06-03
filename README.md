@@ -1,4 +1,4 @@
-[![CIF syntax check](https://github.com/COMCIFS/cif_restr/actions/workflows/main.yml/badge.svg)](https://github.com/COMCIFS/Restraints_Dictionary/actions)
+[![CIF syntax check](https://github.com/COMCIFS/cif_restr/actions/workflows/main.yml/badge.svg)](https://github.com/COMCIFS/cif_restr/actions)
 
 # Restraints Dictionary (restrCIF)
 
@@ -6,7 +6,7 @@ CIF data item definitions for description of restraints or constraints applied i
 
 ## Warning
 
-[This dictionary](cif_rstr.dic) is the latest **draft** version.
+[This dictionary](cif_restr.dic) is the latest **draft** version.
 Definitions are subject to change and software should be careful not to hard-code information.
 The latest approved restraints dictionary is available from the [IUCr CIF website](https://www.iucr.org/resources/cif/dictionaries).
 
