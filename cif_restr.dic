@@ -2932,7 +2932,7 @@ save_RESTR_TORSION
           _restr_torsion.details
              Na1 1_555  Na1 2_555  O1 2_555  H101 1_555  90  1  0.97  ?
 ;
-    _description_example.details
+    _description_example.detail
 ;
       Example 1. A torsion angle restrained to 90+/-1 degree with a refined
       difference of 0.97 degrees.
