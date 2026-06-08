@@ -15,7 +15,7 @@ data_CIF_RESTR
     _dictionary.title             CIF_RESTR
     _dictionary.class             Instance
     _dictionary.version           3.1.1
-    _dictionary.date              2026-06-05
+    _dictionary.date              2026-06-08
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/cif_restr/main/cif_restr.dic
     _dictionary.ddl_conformance   4.2.0
@@ -1858,7 +1858,7 @@ save_
 save_restr_equal_torsion_class.diff_max_su
 
     _definition.id                '_restr_equal_torsion_class.diff_max_su'
-    _definition.update            2026-01-29
+    _definition.update            2026-06-08
     _description.text
 ;
       Standard uncertainty of _restr_equal_torsion_class.diff_max.
@@ -1876,10 +1876,10 @@ save_restr_equal_torsion_class.esd
 
     _definition.id                '_restr_equal_torsion_class.esd'
     _alias.definition_id          '_restr_equal_torsion_class_esd'
-    _definition.update            2026-01-27
+    _definition.update            2026-06-08
     _description.text
 ;
-      The actual estimated standard deviation of the distances in the
+      The actual estimated standard deviation of the torsion angles in the
       class from their average after refinement.
       This number is expected to be similar to the value set for
       _restr_equal_torsion_class.target_weight_param.
@@ -1891,7 +1891,7 @@ save_restr_equal_torsion_class.esd
     _type.container               Single
     _type.contents                Real
     _enumeration.range            0:
-    _units.code                   angstroms
+    _units.code                   degrees
 
 save_
 
@@ -1906,7 +1906,7 @@ save_restr_equal_torsion_class.esd_su
     _name.category_id             restr_equal_torsion_class
     _name.object_id               esd_su
     _name.linked_item_id          '_restr_equal_torsion_class.esd'
-    _units.code                   angstroms
+    _units.code                   degrees
 
     _import.get                   [{'file':templ_attr.cif  'save':general_su}]
 
@@ -1918,7 +1918,7 @@ save_restr_equal_torsion_class.target_weight_param
         '_restr_equal_torsion_class.target_weight_param'
     _alias.definition_id
         '_restr_equal_torsion_class_target_weight_param'
-    _definition.update            2026-02-02
+    _definition.update            2026-06-08
     _description.text
 ;
       The weighting parameter = sqrt(1/weight).  This is the
@@ -1938,7 +1938,7 @@ save_restr_equal_torsion_class.target_weight_param
     _type.contents                Real
     _enumeration.range            0:
     _enumeration.default          0
-    _units.code                   angstroms
+    _units.code                   degrees
 
 save_
 
@@ -3539,7 +3539,7 @@ save_
        Initial CIF2 version created from STAR2 version provided by Syd Hall
        (J Hester)
 ;
-         3.1.1                    2026-06-05
+         3.1.1                    2026-06-08
 ;
        Fixed a CIF2 syntax error.
 
@@ -3599,4 +3599,7 @@ save_
 
        2026-06-05: explicitly linked *.class_id data items to
        the corresponding *_class.class_id data items.
+
+       2026-06-08: changed units of some definitions referring to
+       torsion angles to degrees.
 ;
