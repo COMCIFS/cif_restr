@@ -15,7 +15,7 @@ data_CIF_RESTR
     _dictionary.title             CIF_RESTR
     _dictionary.class             Instance
     _dictionary.version           3.1.1
-    _dictionary.date              2026-06-03
+    _dictionary.date              2026-06-05
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/cif_restr/main/cif_restr.dic
     _dictionary.ddl_conformance   4.2.0
@@ -954,7 +954,7 @@ save_restr_equal_angle.class_id
 
     _definition.id                '_restr_equal_angle.class_id'
     _alias.definition_id          '_restr_equal_angle_class_id'
-    _definition.update            2014-06-29
+    _definition.update            2026-06-05
     _description.text
 ;
       A character string identifying the class of equal angles
@@ -962,7 +962,8 @@ save_restr_equal_angle.class_id
 ;
     _name.category_id             restr_equal_angle
     _name.object_id               class_id
-    _type.purpose                 Encode
+    _name.linked_item_id          '_restr_equal_angle_class.class_id'
+    _type.purpose                 Link
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Code
@@ -1297,7 +1298,7 @@ save_restr_equal_distance.class_id
 
     _definition.id                '_restr_equal_distance.class_id'
     _alias.definition_id          '_restr_equal_distance_class_id'
-    _definition.update            2014-06-29
+    _definition.update            2026-06-05
     _description.text
 ;
       A character string identifying the class of equal distances
@@ -1305,7 +1306,8 @@ save_restr_equal_distance.class_id
 ;
     _name.category_id             restr_equal_distance
     _name.object_id               class_id
-    _type.purpose                 Encode
+    _name.linked_item_id          '_restr_equal_distance_class.class_id'
+    _type.purpose                 Link
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Code
@@ -1656,7 +1658,7 @@ save_restr_equal_torsion.class_id
 
     _definition.id                '_restr_equal_torsion.class_id'
     _alias.definition_id          '_restr_equal_torsion_class_id'
-    _definition.update            2014-06-29
+    _definition.update            2026-06-05
     _description.text
 ;
       A character string identifying the class of equal torsion
@@ -1664,7 +1666,8 @@ save_restr_equal_torsion.class_id
 ;
     _name.category_id             restr_equal_torsion
     _name.object_id               class_id
-    _type.purpose                 Encode
+    _name.linked_item_id          '_restr_equal_torsion_class.class_id'
+    _type.purpose                 Link
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Code
@@ -2095,14 +2098,15 @@ save_restr_parameter.class_id
 
     _definition.id                '_restr_parameter.class_id'
     _alias.definition_id          '_restr_parameter_class_id'
-    _definition.update            2014-06-29
+    _definition.update            2026-06-05
     _description.text
 ;
       The identifier of the class of restraint applied to the atoms.
 ;
     _name.category_id             restr_parameter
     _name.object_id               class_id
-    _type.purpose                 Encode
+    _name.linked_item_id          '_restr_parameter_class.class_id'
+    _type.purpose                 Link
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Code
@@ -2359,7 +2363,7 @@ save_restr_plane.class_id
 
     _definition.id                '_restr_plane.class_id'
     _alias.definition_id          '_restr_plane_class_id'
-    _definition.update            2014-06-29
+    _definition.update            2026-06-05
     _description.text
 ;
       A character string that identifies the plane
@@ -2367,7 +2371,8 @@ save_restr_plane.class_id
 ;
     _name.category_id             restr_plane
     _name.object_id               class_id
-    _type.purpose                 Encode
+    _name.linked_item_id          '_restr_plane_class.class_id'
+    _type.purpose                 Link
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Code
@@ -2738,14 +2743,15 @@ save_restr_rigid_body.class_id
 
     _definition.id                '_restr_rigid_body.class_id'
     _alias.definition_id          '_restr_rigid_body_class_id'
-    _definition.update            2014-06-29
+    _definition.update            2026-06-05
     _description.text
 ;
       A character string identifying a rigid body.
 ;
     _name.category_id             restr_rigid_body
     _name.object_id               class_id
-    _type.purpose                 Encode
+    _name.linked_item_id          '_restr_rigid_body_class.class_id'
+    _type.purpose                 Link
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Code
@@ -3533,7 +3539,7 @@ save_
        Initial CIF2 version created from STAR2 version provided by Syd Hall
        (J Hester)
 ;
-         3.1.1                    2026-06-03
+         3.1.1                    2026-06-05
 ;
        Fixed a CIF2 syntax error.
 
@@ -3590,4 +3596,7 @@ save_
        derived from experiment) and for _restr_U_rigid.U_parallel.
 
        Added category examples.
+
+       2026-06-05: explicitly linked *.class_id data items to
+       the corresponding *_class.class_id data items.
 ;
