@@ -15,7 +15,7 @@ data_CIF_RESTR
     _dictionary.title             CIF_RESTR
     _dictionary.class             Instance
     _dictionary.version           3.1.1
-    _dictionary.date              2026-06-05
+    _dictionary.date              2026-06-08
     _dictionary.uri
         https://raw.githubusercontent.com/COMCIFS/cif_restr/main/cif_restr.dic
     _dictionary.ddl_conformance   4.2.0
@@ -232,7 +232,7 @@ save_restr_angle.diff
 
     _definition.id                '_restr_angle.diff'
     _alias.definition_id          '_restr_angle_diff'
-    _definition.update            2026-01-29
+    _definition.update            2026-06-08
     _description.text
 ;
       The difference between the target and the refined angle.
@@ -243,7 +243,6 @@ save_restr_angle.diff
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
-    _enumeration.range            0:
     _units.code                   degrees
 
 save_
@@ -672,7 +671,7 @@ save_restr_distance_min.c
 
     _definition.id                '_restr_distance_min.C'
     _alias.definition_id          '_restr_distance_min_C'
-    _definition.update            2026-06-03
+    _definition.update            2026-06-08
     _description.text
 ;
       See _restr_distance_min.A for description.
@@ -683,7 +682,6 @@ save_restr_distance_min.c
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
-    _enumeration.range            0:
     _units.code                   none
 
 save_
@@ -787,7 +785,7 @@ save_restr_distance_min.e
 
     _definition.id                '_restr_distance_min.E'
     _alias.definition_id          '_restr_distance_min_E'
-    _definition.update            2026-06-03
+    _definition.update            2026-06-08
     _description.text
 ;
       See _restr_distance_min.A for description.
@@ -798,7 +796,6 @@ save_restr_distance_min.e
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
-    _enumeration.range            0:
     _enumeration.default          0
     _units.code                   angstrom_squared
 
@@ -828,7 +825,7 @@ save_restr_distance_min.g
 
     _definition.id                '_restr_distance_min.G'
     _alias.definition_id          '_restr_distance_min_G'
-    _definition.update            2026-06-03
+    _definition.update            2026-06-08
     _description.text
 ;
       See _restr_distance_min.A for description.
@@ -839,7 +836,6 @@ save_restr_distance_min.g
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Real
-    _enumeration.range            :0
     _units.code                   angstroms
 
 save_
@@ -2401,7 +2397,7 @@ save_restr_plane.displacement
 
     _definition.id                '_restr_plane.displacement'
     _alias.definition_id          '_restr_plane_displacement'
-    _definition.update            2026-01-29
+    _definition.update            2026-06-08
     _description.text
 ;
       The distance between this atom and the best plane through
@@ -2413,7 +2409,6 @@ save_restr_plane.displacement
     _type.source                  Derived
     _type.container               Single
     _type.contents                Real
-    _enumeration.range            0:
     _units.code                   angstroms
 
 save_
@@ -3539,7 +3534,7 @@ save_
        Initial CIF2 version created from STAR2 version provided by Syd Hall
        (J Hester)
 ;
-         3.1.1                    2026-06-05
+         3.1.1                    2026-06-08
 ;
        Fixed a CIF2 syntax error.
 
@@ -3599,4 +3594,9 @@ save_
 
        2026-06-05: explicitly linked *.class_id data items to
        the corresponding *_class.class_id data items.
+
+       2026-06-08: removed _enumeration.range from _restr_angle.diff and
+       _restr_plane.displacement (long-standing deviation from actual
+       practice); also from _restr_distance_min.C, *.E and *.G to align
+       with possible existing parctice as indicated in examples.
 ;
