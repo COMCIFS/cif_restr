@@ -2080,17 +2080,18 @@ save_restr_parameter.atom_site_label
 
     _definition.id                '_restr_parameter.atom_site_label'
     _alias.definition_id          '_restr_parameter_atom_site_label'
-    _definition.update            2014-06-29
+    _definition.update            2026-06-08
     _description.text
 ;
       The atom-site label for an atom in this class.
 ;
     _name.category_id             restr_parameter
     _name.object_id               atom_site_label
-    _type.purpose                 Encode
+    _name.linked_item_id          '_atom_site.label'
+    _type.purpose                 Link
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Code
+    _type.contents                Word
 
 save_
 
@@ -2345,17 +2346,18 @@ save_restr_plane.atom_site_label
 
     _definition.id                '_restr_plane.atom_site_label'
     _alias.definition_id          '_restr_plane_atom_site_label'
-    _definition.update            2014-06-29
+    _definition.update            2026-06-08
     _description.text
 ;
       An atom-site label of one of the atoms that form the plane.
 ;
     _name.category_id             restr_plane
     _name.object_id               atom_site_label
-    _type.purpose                 Encode
+    _name.linked_item_id          '_atom_site.label'
+    _type.purpose                 Link
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Code
+    _type.contents                Word
 
 save_
 
@@ -2643,7 +2645,7 @@ save_restr_plane_class.displacement_max_atom_site_label
         '_restr_plane_class.displacement_max_atom_site_label'
     _alias.definition_id
         '_restr_plane_class_displacement_max_atom_site_label'
-    _definition.update            2014-06-29
+    _definition.update            2026-06-08
     _description.text
 ;
       The atom-site label of the atom that lies furthest
@@ -2651,10 +2653,11 @@ save_restr_plane_class.displacement_max_atom_site_label
 ;
     _name.category_id             restr_plane_class
     _name.object_id               displacement_max_atom_site_label
-    _type.purpose                 Encode
+    _name.linked_item_id          '_atom_site.label'
+    _type.purpose                 Link
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Code
+    _type.contents                Word
 
 save_
 
@@ -2725,17 +2728,18 @@ save_restr_rigid_body.atom_site_label
 
     _definition.id                '_restr_rigid_body.atom_site_label'
     _alias.definition_id          '_restr_rigid_body_atom_site_label'
-    _definition.update            2014-06-29
+    _definition.update            2026-06-08
     _description.text
 ;
       The atom-site labels of an atom in a rigid body.
 ;
     _name.category_id             restr_rigid_body
     _name.object_id               atom_site_label
-    _type.purpose                 Encode
+    _name.linked_item_id          '_atom_site.label'
+    _type.purpose                 Link
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Code
+    _type.contents                Word
 
 save_
 
@@ -3161,7 +3165,7 @@ save_restr_u_iso.atom_site_label
 
     _definition.id                '_restr_U_iso.atom_site_label'
     _alias.definition_id          '_restr_U_iso_atom_site_label'
-    _definition.update            2014-06-29
+    _definition.update            2026-06-08
     _description.text
 ;
       Label of the atom whose atomic displacement parameters
@@ -3169,10 +3173,11 @@ save_restr_u_iso.atom_site_label
 ;
     _name.category_id             restr_U_iso
     _name.object_id               atom_site_label
-    _type.purpose                 Encode
+    _name.linked_item_id          '_atom_site.label'
+    _type.purpose                 Link
     _type.source                  Assigned
     _type.container               Single
-    _type.contents                Code
+    _type.contents                Word
 
 save_
 
@@ -3602,4 +3607,6 @@ save_
 
        2026-06-08: changed units of some definitions referring to
        torsion angles to degrees.
+
+       Added explicit links to the _atom_site.label data item.
 ;
